@@ -1,0 +1,90 @@
+/.metadata/
+# Java/Spring Boot İçin
+
+# Maven hedef dosyaları
+target/
+
+# Gradle derleme dosyaları
+.gradle/
+build/
+
+# IDE dosyaları
+*.iml
+.idea/
+*.class
+*.project
+*.settings/
+*.factorypath
+
+# Çalışma dosyaları
+*.log
+*.war
+*.jar
+*.ear
+
+# Geçici dosyalar
+*.swp
+*~
+*.bak
+*.tmp
+*.out
+*.DS_Store
+
+# Operasyon dosyaları
+spring.log
+nohup.out
+
+# Önbellek dosyaları
+*.cache
+*.gz
+*.zip
+
+# Test çıktı dosyaları
+test-output/
+surefire-reports/
+
+# Environment dosyaları
+.env
+
+---
+
+# Go İçin
+
+# Derlenmiş Go dosyaları
+*.exe
+*.out
+*.dll
+*.so
+*.dylib
+
+# Modül dosyaları
+vendor/
+
+# Go mod cache (genelde otomatik eklenir ama kontrol et)
+go.sum
+
+# Geçici editör dosyaları
+*.swp
+*~
+*.bak
+
+# Çalışma dosyaları
+*.log
+*.tmp
+
+---
+
+# Genel Geçici/OS Dosyaları
+
+# MacOS
+.DS_Store
+
+# Linux
+*.pid
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Git kriptolama dosyaları
+*.gpg
