@@ -1,11 +1,11 @@
 package com.customer.order.repository;
 
-import com.customer.order.model.Order;
+import com.customer.order.model.Orders;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
 
-public interface OrderRepository extends JpaRepository<Order, Long> {
+public interface OrderRepository extends JpaRepository<Orders, Long> {
 
-    List<Order> findByCustomerNumber(String customerNumber);
+    List<Orders> findByCustomerNumber(String customerNumber);
 }

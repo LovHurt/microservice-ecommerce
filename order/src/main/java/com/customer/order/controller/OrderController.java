@@ -1,6 +1,6 @@
 package com.customer.order.controller;
 
-import com.customer.order.model.Order;
+import com.customer.order.model.Orders;
 import com.customer.order.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -17,13 +17,13 @@ public class OrderController {
 
     //createorder
     @PostMapping
-    public Order createOrder(@RequestBody Order order) {
+    public Orders createOrder(@RequestBody Orders order) {
         return orderService.saveOrder(order);
     }
 
     //listorders
     @GetMapping
-    public List<Order> listOrders(@RequestParam String customerNumber) {
+    public List<Orders> listOrders(@RequestParam String customerNumber) {
         return orderService.listOrder(customerNumber);
     }
 }
